@@ -1,4 +1,4 @@
-body, div, header, main, section, footer, h1, h2, h3, h4, p, a {
+* {
   margin: 0;
 }
 
@@ -38,13 +38,12 @@ body, div, header, main, section, footer, h1, h2, h3, h4, p, a {
   background-size: cover;
 }
 .header__title {
-  position: absolute;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
   align-self: center;
-  left: 64px;
+  margin-left: 64px;
   z-index: 2;
 }
 .header__subtitle {
@@ -83,7 +82,10 @@ body, div, header, main, section, footer, h1, h2, h3, h4, p, a {
 }
 
 
-
+.content {
+  display: flex;
+  flex-direction: column;
+}
 
 
 .description {
@@ -322,6 +324,9 @@ body, div, header, main, section, footer, h1, h2, h3, h4, p, a {
 }
 .footer__column_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
@@ -331,15 +336,12 @@ body, div, header, main, section, footer, h1, h2, h3, h4, p, a {
   background-repeat: no-repeat;
 }
 .footer__author {
-  position: absolute;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   color: white;
   margin-top: 18px;
   margin-bottom: 18px;
-  left: 0;
-  bottom: 0;
 }
 .footer__column_content_info {
   display: flex;
